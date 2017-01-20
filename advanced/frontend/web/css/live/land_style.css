@@ -1,0 +1,19 @@
+@charset "utf-8";
+#land{}
+#login_bg{background:url(../images/bg.png)  no-repeat scroll 100% 100% / cover; bottom:0; height:100%; left:0; right:0; top:0; width:100%;  padding-top:6%; position:fixed;}
+#login_bg ul{margin-top:30px;}
+#land_t{background:#FFF; border-radius: 5px; box-shadow: 0 1px 5px rgba(0, 0, 0, 0.15); margin:0 auto; padding: 40px; position: relative; text-align: center; width: 560px; z-index: 9;}
+#land_t font{display:block;text-align:center; font-size:30px; margin-top:20px; color: #3d5266;}
+#land_t .land_i{border:none; border:1px solid #cfdae6;border-radius:100px; height:50px; line-height:50px; position:relative; width:100%; margin-top:20px; font-size:18px; margin-left:10px; text-indent:20px; background-color:transparent; color:#3d5266;}
+#land_pass{margin-top:15px;}
+#land_pass .psw{margin-left:20px;}
+#land_pass a{color: #3d5266; font-size: 16px;}
+#land_pass a:hover{ outline:medium none; text-decoration:none; color:#3399cc;}
+.crm-register-footer .pg-btn-submit{display:block; background:#00aaef none repeat scroll 0 0; border-radius:100px; color:#fff;
+font-size:20px; height:50px; line-height:50px; width:100%; margin-top:20px;}
+.crm-register-footer a:hover{ text-decoration:none; background:#3399cc none repeat scroll 0 0; border-radius:100px; color:#fff;
+font-size:20px; height:50px; line-height:50px; width:100%;}
+.crm-loginfooter-info{color:#8fa1b2; font-size:14px; margin-top:20px; text-align:center;}
+.crm-loginfooter-info a:hover{color:#3399cc; outline:medium none;}
+.crm-loginfooter-info a{color:#3399cc;}
+a:focus,input:focus{outline:0px;}

@@ -1,0 +1,41 @@
+@charset "utf-8";
+#top_bg{background:#303342 none repeat scroll 0 0; height:60px; width:100%; background-size:100% 60px;}
+#top_bg .top_bg_1 img{margin-top:10px;}
+#top_bg .top_bg_1 ul li{float:left;}
+#top_bg .top_bg_1 ul .top_bg_li_1{ margin-right:25px;}
+#top_bg .top_bg_1 ul li a{color:#FFF; font-size:18px; line-height:60px;}
+#banner{padding-top:60px;}
+.main_fr{width:100%; max-width:1000px; margin-top:20px;}
+.main_fr h3 {background:#FFF; font-size:18px; font-weight:bold; height:50px; line-height:50px; margin-bottom:30px; padding-left:30px; background-size:100%; color:#000; box-shadow:1px 1px 2px #999; border-radius:3px;}
+.listul{ background:#fff none repeat scroll 0 0; background-size:100%; box-shadow:1px 1px 2px #999;}
+.listul li{border-bottom:1px dashed #ccc; clear:both; margin:0 5px; padding:25px 20px 15px; color:#000;}
+.listul li img{ vertical-align:middle;}
+.listul li a{background:#2593fc; border-radius:4px; color:#fff; padding:8px 30px 8px 30px; text-align:center;}
+.listul li a:hover{background:#29b3e6;}
+.listul li:last-child{border:none;}
+.listul li img{height:132px; width:100px; margin-top:10px; margin-right:10px;}
+.listul li p{display:block;color:#000; padding-top:10px; line-height:26px;}
+#bottom{width:100%; height:40px; background:#898989; margin-top:50px;}
+#bottom p{display:block; line-height:40px; text-align:center;}
+
+/*table*/
+#hand_table #hand_tb{ border:1px solid #ccc; border-radius:3px; color:#000; text-align:center;}
+#hand_table th{border:1px solid #ccc; height:32px; background-color:#eef3f9;}
+#hand_table td{border:1px solid #ccc; height:32px; background-color:#fff;}
+#hand_table tr{height:40px;}
+
+/*table_tab*/
+#tab_wz_h{clear:both; height:47px;   position:relative; width:100%;}
+#tab_wz_h li{float:left; padding:0 5px;}
+#tab_wz_h li a{background-color:#f4f4f4; border:1px solid #ccc; border-radius:3px 3px 0 0; display:list-item; line-height:45px;
+min-width:65px; margin-right:5px; padding:0 25px; }
+#tab_wz_h li a.hover{color:#222; text-decoration:none; background-color:#fff; border-bottom:1px solid #fff;}
+#tab_img_h li{display:none;}
+/*table*/
+#data_table #data_tb{border:1px solid #ccc; border-radius:3px; color:#000; text-align:center;}
+#data_table th{border:1px solid #ccc; height:32px; background-color:#eef3f9;}
+#data_table td{border:1px solid #ccc; height:32px; background-color:#fff;}
+#data_table tr{height:40px;}
+.data_1{margin-left:16px;}
+.data_2{margin-left:32px;}
+.data_3{margin-left:32px;}

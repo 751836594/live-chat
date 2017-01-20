@@ -1,0 +1,316 @@
+@charset "udys-8";
+
+.w1000{width:1000px; margin:0 auto;}
+/*重置默认样式*/
+/*---------------------base reset--------------------------*/
+/*使其容器如DIV的内容自动换行*/
+*{word-wrap:break-word}
+
+/*去掉内外边距-内外边距通常让各个浏览器样式的表现位置不同*/ 
+*{
+	margin:0;padding:0
+}
+
+/*去掉列表标签的默认样式*/
+ul,ol,dl{list-style-type:none}
+
+/*防止用户自定义背景颜色对网页的影响，添加让用户可以自定义字体 */  
+html{
+	-webkit-text-size-adjust:100%; /*禁用Webkit内核浏览器的文字大小调整功能，默认是auto；*/
+	-ms-text-size-adjust:100%; /*禁用IE内核浏览器的文字大小调整功能，默认是auto；*/
+	font-family: sans-serif; /* 1 */
+  	-webkit-font-smoothing: antialiased;
+	font-size:62.5%;
+}
+
+
+address,caption,cite,code,dfn,em,th,var{font-style:normal;font-weight:normal}
+input,button,textarea,select,optgroup,option{font-family:inherit;font-size:inherit;font-style:inherit;font-weight:inherit}
+button{overflow: visible;vertical-align:middle;outline:none}
+body,th,td,button,input,select,textarea{
+  font-family:"微软雅黑","Microsoft Yahei","Hiragino Sans GB","Helvetica Neue",Helvetica,tahoma,arial,Verdana,sans-serif,"WenQuanYi Micro Hei","\5B8B\4F53";
+  font-size:1.4rem;
+  -webkit-font-smoothing:antialiased;
+  -moz-font-smoothing:antialiased
+}
+body{
+  font-size: 1.2rem;
+  color: #fff;
+  background-color: #fff;
+  text-align:left;
+}
+hr{
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0;
+}
+
+h1,h2,h3,h4,h5,h6{font-size:100%}
+a,area{outline:none;blr:expression(this.onFocus=this.blur())}
+a{text-decoration:none; color:white; cursor:pointer;}
+a.ie6:hover{zoom:1}
+a:focus{outline:none}
+a:hover,a:active{
+	outline:none;
+	color:white;
+	text-decoration:none;
+}
+a.lager{
+	font-size:14px;
+}
+:focus{outline:none}
+sub,sup{vertical-align:baseline}
+
+/*img自适应*/
+.img-responsive{max-width:100%; height:auto}
+
+/*IE下a:hover 背景闪烁*/
+html{overflow:-moz-scrollbars-vertical;zoom:expression(function(ele){ele.style.zoom = "1";document.execCommand("BackgroundImageCache",false,true)}(this))}
+
+
+/*重置table样式*/
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+td,th {
+  	padding: 0;
+	/*padding-left: 3px;*/
+}
+
+img{border:none;}
+
+/*图片居左，居中，居右*/
+.alignleft {
+	display: inline;
+	float: left;
+}
+.alignright {
+	display: inline;
+	float: right;
+}
+.aligncenter {
+	clear: both;
+	display: block;
+	margin:auto;
+}
+
+/********文字居中居左居右**********/
+.tc{text-align:center;}
+.tl{text-align:left;}
+.tr{text-align:right;}
+
+/*---------------------HTML5 reset--------------------------*/
+header,footer,section,aside,details,menu,article,section,nav,address,hgroup,figure,figcaption,legend{display:block;margin:0;padding:0}time{display:inline}
+audio,canvas,video{display:inline-block;*display:inline;*zoom:1}
+audio:not([controls]){display:none}
+svg:not(:root) {overflow: hidden}
+fieldset {
+	border-width:0;
+	padding: 0.35rem 0.625rem 0.75rem;
+	margin: 0 0.2rem;
+	border: 1px solid #c0c0c0
+}
+legend{
+	margin-bottom:1rem;
+	font-size:2.1rem;
+	line-height:4rem;
+	border:0;
+	padding: 0 1rem;
+}
+legend small{font-size:15px; font-size:1.5rem; color:#999}
+
+
+input[type="number"]::-webkit-inner-spin-button,input[type="number"]::-webkit-outer-spin-button {height: auto}
+input[type="search"] {-webkit-appearance: textfield; /* 1 */-moz-box-sizing: content-box;-webkit-box-sizing: content-box; /* 2 */box-sizing: content-box}
+input[type="search"]::-webkit-search-cancel-button,input[type="search"]::-webkit-search-decoration {-webkit-appearance: none}
+
+/* HTML5 媒体文件跟 img 保持一致 */  
+audio,canvas,video {  
+    display: inline-block;*display: inline;*zoom: 1;  
+} 
+
+/*HTML5新模块元素在IE8、9版本浏览器中没有被定义默认样式。为解决该问题，给下列元素添加“block”显示属性*/
+article,  
+aside,  
+details,  
+figcaption,  
+figure,  
+footer,  
+header,  
+hgroup,  
+main,  
+nav,  
+section,  
+summary {  
+    display: block;  
+}
+
+/*清除浮动*/
+.clearfix{*zoom:1;} /*解决ie6/7下面的浮动塌陷问题*/
+.clearfix:before,.clearfix:after{display:table; line-height:0; content:"";} /*display:table;解决其他下面的浮动塌陷问题,line-height是将添加的内容高度设为0；*/
+.clearfix:after{clear:both;}/*清楚浮动*/
+
+/**外边距**/
+.ml5{margin-left:0.5rem;}
+.ml10{margin-left:1rem;}
+.ml14{margin-left:1.4rem;}
+.ml15{margin-left:1.5rem;}
+.ml20{margin-left:2rem;}
+.ml25{margin-left:2.5rem;}
+.ml30{margin-left:3rem;}
+.ml35{margin-left:3.5rem;}
+.ml40{margin-left:4rem;}
+.ml55{margin-left:5.5rem;}
+.ml60{margin-left:6rem;}
+.ml70{margin-left:7rem;}
+.ml90{margin-left:9rem;}
+
+.mt3{margin-top:0.3rem;}
+.mt4{margin-top:0.4rem;}
+.mt5{margin-top:0.5rem;}
+.mt8{margin-top:0.8rem;}
+.mt10{margin-top:1rem;}
+.mt12{margin-top:1.2rem;}
+.mt13{margin-top:1.3rem;}
+.mt15{margin-top:1.5rem;}
+.mt14{margin-top:1.4rem;}
+.mt20{margin-top:2rem;}
+.mt25{margin-top:2.5rem;}
+.mt30{margin-top:3rem;}
+.mt35{margin-top:3.5rem;}
+.mt40{margin-top:4rem;}
+.mt50{margin-top:5rem;}
+.mt60{margin-top:6rem;}
+.mt100{margin-top:100px;}
+.mt120{margin-top:120px;}
+
+.mr5{margin-right:0.5rem;}
+.mr10{margin-right:1rem;}
+.mr15{margin-right:1.5rem;}
+.mr20{margin-right:2rem;}
+.mr25{margin-right:2.5rem;}
+.mr30{margin-right:3rem;}
+.mr50{margin-right:5rem;}
+
+.mb5{margin-bottom:0.5rem;}
+.mb10{margin-bottom:1rem;}
+.mb15{margin-bottom:1.5rem;}
+.mb20{margin-bottom:2rem;}
+.mb25{margin-bottom:2.5rem;}
+.mb30{margin-bottom:3rem;}
+.mb40{margin-bottom:4rem;}
+
+
+/**内边距**/
+.pl5{padding-left:0.5rem;}
+.pl10{padding-left:1rem;}
+.pl15{padding-left:1.5rem;}
+.pl20{padding-left:2rem;}
+.pl25{padding-left:2.5rem;}
+.pl30{padding-left:3rem;}
+
+.pr5{padding-right:0.5rem;}
+.pr10{padding-right:1rem;}
+.pr15{padding-right:1.5rem;}
+.pr20{padding-right:2rem;}
+.pr25{padding-right:2.5rem;}
+.pr30{padding-right:3rem;}
+.pr35{padding-right:3.5rem;}
+
+.pt5{padding-top:0.5rem;}
+.pt10{padding-top:1rem;}
+.pt15{padding-top:1.5rem;}
+.pt20{padding-top:2rem;}
+.pt25{padding-top:2.5rem;}
+.pt30{padding-top:3rem;}
+.pt40{padding-top:4rem;}
+
+.pb5{padding-bottom:0.5rem;}
+.pb10{padding-bottom:1rem;}
+.pb15{padding-bottom:1.5rem;}
+.pb20{padding-bottom:2rem;}
+.pb25{padding-bottom:2.5rem;}
+.pb30{padding-bottom:3rem;}
+.pb40{padding-bottom:4rem;}
+
+/*隐藏*/
+.hidden{display:none;}
+/*浮动*/
+.fl{float:left; display:block;}
+.fr{float:right; display:block;}
+/*字体*/
+.f12{font-size: 1.2rem;}
+.f14{font-size: 1.4rem;}
+.f16{font-size: 1.6rem;}
+.f20{font-size:2rem;}
+.f30{font-size:3rem;}
+.f24{font-size:2.4rem;}
+.f25{font-size:2.5rem;}
+.f60{font-size:6rem;}
+
+.arial{font-family:"arial";}
+
+.pr{position: relative;}
+.pa{position:absolute;}
+.pf{position:fixed;}
+
+/*颜色*/
+.dys-red{color:#fb593e;}
+.dys-blue{color:#279cf7;}
+.dys-yellow{color:#ffe800;}
+.dys-gray{color:#c0c0c0}
+.dys-gray1{color:#9a9a9a;}
+.dys-gray2{color:#757575;}
+.dys-black{color:#333;}
+
+/*公告弹窗*/
+#gGaoLog{
+	overflow-y:auto;
+	color:gray;
+	display:none;
+	height:300px;
+	width:600px;
+	padding:0px 12px 12px 12px;
+	background:white;
+	border:1px solid #e0e0e0;
+	border-radius:8px;
+	position:absolute;
+	z-index:10000;
+	text-align: center;
+}
+#gGaoLog .log_t{
+	display: block;
+	border-radius: 8px;
+	font-size:22px;
+	font-weight: bold;
+	height:50px;
+	line-height:50px;
+	width:100%;
+	background:#f0f0f0;
+}
+#gGaoLog .log_t .close{
+	cursor:pointer;
+	float:right;
+	font-family:arial;
+	font-size:40px;
+	font-weight:700;
+	color:#999;
+	padding-right:10px;
+}
+
+#gGaoLog p{
+	text-align: left;
+	text-indent:2em;
+}
+
+.gGao{
+	cursor: pointer;
+	color:white;
+	font-size: 12px;
+}
+
+#biaoq{
+
+}
+

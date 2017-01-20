@@ -1,0 +1,16 @@
+ *{margin:0; padding:0;}
+body{font:14px "微软雅黑","黑体","宋体"; color:#666;}
+img{border:0 none;}
+a{text-decoration:none; color:#666;}
+a:hover{text-decoration:underline;}
+em,i{font-style:normal;}
+b,strong{font-weight:normal;}
+ul,li,ol{list-style:none;}
+.clearfix{*zoom:1;}
+.clearfix:before,.clearfix:after{display:table; line-height:0; content:"";}
+.clearfix:after{clear:both;}
+.fl{float:left;}
+.fr{float:right;}
+.w560{width:560px; margin:0 auto;}
+.mt10{margin-top:10px;}
+img{border:none;}
